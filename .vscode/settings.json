@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "markdown.validate.enabled": true,
+  "markdown.occurrencesHighlight.enabled": true,
+  "excalidraw.theme": "light"
+}
