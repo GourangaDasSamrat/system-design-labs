@@ -114,3 +114,24 @@ This structure directly mirrors what interviewers are looking for when they ask 
 | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
 | [Excalidraw](https://excalidraw.com)                                                                         | Open and view all `.excalidraw` diagram files |
 | [Excalidraw VS Code Extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor) | Edit diagrams directly in your editor         |
+
+---
+
+## License
+
+Copyright © 2026 **Gouranga Das Samrat**. All rights reserved.
+
+This work is licensed under the **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)** (CC BY-NC-SA 4.0).
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+**You are free to:**
+- ✅ **Share** — copy and redistribute the material in any medium or format
+- ✅ **Adapt** — remix, transform, and build upon the material
+
+**Under the following terms:**
+- 📛 **Attribution** — You must give appropriate credit to [Gouranga Das Samrat](https://github.com/GoruangaDasSamrat), provide a link to the license, and indicate if changes were made.
+- 🚫 **NonCommercial** — You may not use the material for commercial purposes.
+- 🔄 **ShareAlike** — If you remix or build upon this material, you must distribute your contributions under the same license.
+
+> Unauthorized commercial use or redistribution without proper attribution is strictly prohibited.
