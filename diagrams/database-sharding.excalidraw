@@ -1,0 +1,493 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 80,
+      "y": 15,
+      "width": 640,
+      "height": 35,
+      "text": "Database Sharding -- Split Data + Writes Across Multiple Machines",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#212529",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "router",
+      "type": "rectangle",
+      "x": 270,
+      "y": 80,
+      "width": 180,
+      "height": 55,
+      "strokeColor": "#e67700",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "trouter",
+      "type": "text",
+      "x": 280,
+      "y": 100,
+      "width": 160,
+      "height": 20,
+      "text": "Shard Router / Proxy",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#e67700",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "hashfn",
+      "type": "text",
+      "x": 270,
+      "y": 145,
+      "width": 180,
+      "height": 20,
+      "text": "hash(userId) % 3",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#888",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "s0",
+      "type": "rectangle",
+      "x": 80,
+      "y": 210,
+      "width": 150,
+      "height": 65,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "ts0",
+      "type": "text",
+      "x": 85,
+      "y": 225,
+      "width": 140,
+      "height": 35,
+      "text": "Shard 0\nuserId % 3 = 0\n(0-33M rows)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "s1",
+      "type": "rectangle",
+      "x": 285,
+      "y": 210,
+      "width": 150,
+      "height": 65,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "ts1",
+      "type": "text",
+      "x": 290,
+      "y": 225,
+      "width": 140,
+      "height": 35,
+      "text": "Shard 1\nuserId % 3 = 1\n(33-66M rows)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "s2",
+      "type": "rectangle",
+      "x": 490,
+      "y": 210,
+      "width": 150,
+      "height": 65,
+      "strokeColor": "#9c36b5",
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "ts2",
+      "type": "text",
+      "x": 495,
+      "y": 225,
+      "width": 140,
+      "height": 35,
+      "text": "Shard 2\nuserId % 3 = 2\n(66-100M rows)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#6a1e9c",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "r0",
+      "type": "rectangle",
+      "x": 80,
+      "y": 310,
+      "width": 150,
+      "height": 45,
+      "strokeColor": "#aaa",
+      "backgroundColor": "#f1f3f5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tr0",
+      "type": "text",
+      "x": 85,
+      "y": 325,
+      "width": 140,
+      "height": 20,
+      "text": "Replica (Shard 0)",
+      "fontSize": 11,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#888",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "r1",
+      "type": "rectangle",
+      "x": 285,
+      "y": 310,
+      "width": 150,
+      "height": 45,
+      "strokeColor": "#aaa",
+      "backgroundColor": "#f1f3f5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tr1",
+      "type": "text",
+      "x": 290,
+      "y": 325,
+      "width": 140,
+      "height": 20,
+      "text": "Replica (Shard 1)",
+      "fontSize": 11,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#888",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "r2",
+      "type": "rectangle",
+      "x": 490,
+      "y": 310,
+      "width": 150,
+      "height": 45,
+      "strokeColor": "#aaa",
+      "backgroundColor": "#f1f3f5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tr2",
+      "type": "text",
+      "x": 495,
+      "y": 325,
+      "width": 140,
+      "height": 20,
+      "text": "Replica (Shard 2)",
+      "fontSize": 11,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#888",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "a0",
+      "type": "arrow",
+      "x": 340,
+      "y": 135,
+      "width": 85,
+      "height": 75,
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          85,
+          75
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "a1",
+      "type": "arrow",
+      "x": 360,
+      "y": 135,
+      "width": -5,
+      "height": 75,
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -5,
+          75
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "a2",
+      "type": "arrow",
+      "x": 360,
+      "y": 135,
+      "width": -155,
+      "height": 75,
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -155,
+          75
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "ar0",
+      "type": "arrow",
+      "x": 155,
+      "y": 275,
+      "width": 0,
+      "height": 35,
+      "strokeColor": "#aaa",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          35
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "ar1",
+      "type": "arrow",
+      "x": 360,
+      "y": 275,
+      "width": 0,
+      "height": 35,
+      "strokeColor": "#aaa",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          35
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "ar2",
+      "type": "arrow",
+      "x": 565,
+      "y": 275,
+      "width": 0,
+      "height": 35,
+      "strokeColor": "#aaa",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          35
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "prob",
+      "type": "rectangle",
+      "x": 20,
+      "y": 390,
+      "width": 740,
+      "height": 90,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#fff5f5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tprob",
+      "type": "text",
+      "x": 30,
+      "y": 400,
+      "width": 730,
+      "height": 80,
+      "text": "Challenges:\n- Cross-shard JOIN: ORDER JOIN USER -- user on Shard 0, order on Shard 2 -> expensive!\n  Fix: Denormalize data | co-locate related data on same shard\n- Hot spot: celebrity data -> all traffic to one shard. Fix: split key with suffix suffix_0, suffix_1...",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#c92a2a",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}
