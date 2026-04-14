@@ -1,0 +1,339 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 80,
+      "y": 15,
+      "width": 640,
+      "height": 35,
+      "text": "Message Queues (SQS) -- Decoupling + Retry + DLQ",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#212529",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "prod",
+      "type": "rectangle",
+      "x": 20,
+      "y": 160,
+      "width": 130,
+      "height": 55,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tprod",
+      "type": "text",
+      "x": 28,
+      "y": 178,
+      "width": 114,
+      "height": 20,
+      "text": "Producer\n(Order Service)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "q",
+      "type": "rectangle",
+      "x": 210,
+      "y": 140,
+      "width": 180,
+      "height": 95,
+      "strokeColor": "#e67700",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tq_hdr",
+      "type": "text",
+      "x": 270,
+      "y": 148,
+      "width": 60,
+      "height": 20,
+      "text": "SQS Queue",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#e67700",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "tq_body",
+      "type": "text",
+      "x": 218,
+      "y": 170,
+      "width": 164,
+      "height": 60,
+      "text": "msg1: {orderId:1}\nmsg2: {orderId:2}\nmsg3: {orderId:3}",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#7c4a00",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "c1",
+      "type": "rectangle",
+      "x": 460,
+      "y": 110,
+      "width": 140,
+      "height": 50,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tc1",
+      "type": "text",
+      "x": 468,
+      "y": 128,
+      "width": 124,
+      "height": 20,
+      "text": "Worker 1",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "c2",
+      "type": "rectangle",
+      "x": 460,
+      "y": 185,
+      "width": 140,
+      "height": 50,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tc2",
+      "type": "text",
+      "x": 468,
+      "y": 203,
+      "width": 124,
+      "height": 20,
+      "text": "Worker 2",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "ap",
+      "type": "arrow",
+      "x": 150,
+      "y": 187,
+      "width": 60,
+      "height": 0,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "aw1",
+      "type": "arrow",
+      "x": 390,
+      "y": 185,
+      "width": 70,
+      "height": -45,
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70,
+          -45
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "aw2",
+      "type": "arrow",
+      "x": 390,
+      "y": 195,
+      "width": 70,
+      "height": 20,
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70,
+          20
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "vis",
+      "type": "rectangle",
+      "x": 20,
+      "y": 280,
+      "width": 760,
+      "height": 80,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tvis",
+      "type": "text",
+      "x": 30,
+      "y": 285,
+      "width": 750,
+      "height": 75,
+      "text": "Visibility Timeout: Consumer pulls msg -> msg HIDDEN for 30s\n  Consumer succeeds -> deletes msg -> gone forever\n  Consumer CRASHES -> 30s later msg REAPPEARS -> another worker picks it up (at-least-once delivery!)\nIMPORTANT: consumers MUST be idempotent (check if orderId already processed before acting)",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "dlq",
+      "type": "rectangle",
+      "x": 20,
+      "y": 375,
+      "width": 760,
+      "height": 80,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#fff5f5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tdlq",
+      "type": "text",
+      "x": 30,
+      "y": 380,
+      "width": 750,
+      "height": 75,
+      "text": "Dead Letter Queue (DLQ): Message fails 3 times -> moved to DLQ\nOps team inspects DLQ -> fix bug -> redrive messages back to main queue\nNever lose a message! DLQ is your safety net for debugging production failures.",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#c92a2a",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}
