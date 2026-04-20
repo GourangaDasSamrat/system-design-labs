@@ -1,0 +1,68 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": [
+    "typescript",
+    "node",
+    "html",
+    "css",
+    "docker",
+    "npm"
+  ],
+  "words": [
+    "replication",
+    "sharding",
+    "microservices",
+    "cdn",
+    "excalidraw",
+    "redis",
+    "nosql",
+    "grpc",
+    "nagios",
+    "cron",
+    "idempotency",
+    "bitmap",
+    "gossip",
+    "dockerfile",
+    "kubernetes",
+    "consul",
+    "etcd",
+    "zookeeper",
+    "hashing",
+    "consistent",
+    "replica",
+    "throughput",
+    "latency",
+    "idempotent",
+    "denormalization",
+    "colocated",
+    "colocation",
+    "rpc",
+    "protobuf",
+    "sla",
+    "rto",
+    "rpo",
+    "failover",
+    "ingress",
+    "egress",
+    "stateless",
+    "stateful",
+    "shard",
+    "sharded"
+  ],
+  "flagWords": [
+    "hack",
+    "todo",
+    "fixme"
+  ],
+  "import": [
+    "@cspell/cspell-bundled-dicts"
+  ],
+  "ignoreWords": [],
+  "enabled": true,
+  "ignorePaths": [
+    ".git",
+    "node_modules",
+    ".github"
+  ]
+}
