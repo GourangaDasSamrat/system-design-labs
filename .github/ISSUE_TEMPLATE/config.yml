@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/GourangaDasSamrat/system-design-labs/discussions
+    about: Ask questions and share ideas in discussions
+  - name: System Design Questions
+    url: https://github.com/GourangaDasSamrat/system-design-labs/discussions/categories/q-a
+    about: Get help understanding system design concepts
