@@ -1,0 +1,448 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 50,
+      "y": 15,
+      "width": 720,
+      "height": 35,
+      "text": "HLD: URL Shortener -- Base62 Encoding + Redis Cache + 302 Redirect",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#212529",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "client",
+      "type": "rectangle",
+      "x": 20,
+      "y": 170,
+      "width": 110,
+      "height": 55,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tclient",
+      "type": "text",
+      "x": 28,
+      "y": 188,
+      "width": 94,
+      "height": 20,
+      "text": "Client",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "gw",
+      "type": "rectangle",
+      "x": 180,
+      "y": 160,
+      "width": 140,
+      "height": 70,
+      "strokeColor": "#e67700",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tgw",
+      "type": "text",
+      "x": 195,
+      "y": 188,
+      "width": 110,
+      "height": 20,
+      "text": "API Gateway + LB",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#7c4a00",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "svc",
+      "type": "rectangle",
+      "x": 390,
+      "y": 160,
+      "width": 140,
+      "height": 70,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tsvc",
+      "type": "text",
+      "x": 400,
+      "y": 178,
+      "width": 120,
+      "height": 35,
+      "text": "URL Service\n(shorten + redirect)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "redis",
+      "type": "rectangle",
+      "x": 590,
+      "y": 100,
+      "width": 140,
+      "height": 60,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#ffe3e3",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tredis",
+      "type": "text",
+      "x": 598,
+      "y": 118,
+      "width": 124,
+      "height": 30,
+      "text": "Redis Cache\nshortCode -> longURL",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#c92a2a",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "pg",
+      "type": "rectangle",
+      "x": 590,
+      "y": 230,
+      "width": 140,
+      "height": 60,
+      "strokeColor": "#9c36b5",
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tpg",
+      "type": "text",
+      "x": 598,
+      "y": 248,
+      "width": 124,
+      "height": 30,
+      "text": "PostgreSQL\n(source of truth)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#6a1e9c",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "queue",
+      "type": "rectangle",
+      "x": 390,
+      "y": 290,
+      "width": 140,
+      "height": 55,
+      "strokeColor": "#364fc7",
+      "backgroundColor": "#e5edff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tqueue",
+      "type": "text",
+      "x": 398,
+      "y": 308,
+      "width": 124,
+      "height": 20,
+      "text": "Analytics Queue",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#364fc7",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "a1",
+      "type": "arrow",
+      "x": 130,
+      "y": 197,
+      "width": 50,
+      "height": 0,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "a2",
+      "type": "arrow",
+      "x": 320,
+      "y": 195,
+      "width": 70,
+      "height": 0,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "a3",
+      "type": "arrow",
+      "x": 530,
+      "y": 188,
+      "width": 60,
+      "height": -58,
+      "strokeColor": "#c92a2a",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          -58
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "a4",
+      "type": "arrow",
+      "x": 530,
+      "y": 210,
+      "width": 60,
+      "height": 50,
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          50
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "a5",
+      "type": "arrow",
+      "x": 460,
+      "y": 230,
+      "width": 0,
+      "height": 60,
+      "strokeColor": "#364fc7",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          60
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "base62",
+      "type": "rectangle",
+      "x": 20,
+      "y": 380,
+      "width": 370,
+      "height": 100,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tbase62",
+      "type": "text",
+      "x": 30,
+      "y": 388,
+      "width": 350,
+      "height": 92,
+      "text": "Short Code Generation (Base62):\ncharset = [0-9 a-z A-Z] = 62 chars\n7 chars = 62^7 = 3.5 trillion unique codes\n\nAuto-increment DB ID -> Base62(ID) = short code\nEx: ID 123456789 -> Base62 -> '8M0kX'",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "flow",
+      "type": "rectangle",
+      "x": 410,
+      "y": 380,
+      "width": 360,
+      "height": 100,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tflow",
+      "type": "text",
+      "x": 420,
+      "y": 388,
+      "width": 340,
+      "height": 92,
+      "text": "Redirect Flow:\n1. GET /:code -> URL Service\n2. Check Redis (HIT -> 302 in <1ms)\n3. MISS -> query PostgreSQL\n4. Store in Redis with TTL=24h\n5. Return 302 (not 301 -- need analytics+expiry!)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}
