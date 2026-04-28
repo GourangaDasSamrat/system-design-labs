@@ -1,0 +1,602 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 50,
+      "y": 15,
+      "width": 720,
+      "height": 35,
+      "text": "HLD: Notification System -- Push + Email + SMS + Priority + Retry",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#212529",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "ev",
+      "type": "rectangle",
+      "x": 20,
+      "y": 140,
+      "width": 130,
+      "height": 55,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tev",
+      "type": "text",
+      "x": 28,
+      "y": 155,
+      "width": 114,
+      "height": 30,
+      "text": "Event Sources\n(Order/User/Sched)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "nsvc",
+      "type": "diamond",
+      "x": 210,
+      "y": 130,
+      "width": 160,
+      "height": 80,
+      "strokeColor": "#e67700",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "tnsvc",
+      "type": "text",
+      "x": 218,
+      "y": 163,
+      "width": 144,
+      "height": 20,
+      "text": "Notification\nService + Prefs",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#7c4a00",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "kafka",
+      "type": "rectangle",
+      "x": 430,
+      "y": 140,
+      "width": 140,
+      "height": 55,
+      "strokeColor": "#9c36b5",
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tkafka",
+      "type": "text",
+      "x": 438,
+      "y": 155,
+      "width": 124,
+      "height": 30,
+      "text": "Message Queues\n(High/Med/Low)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#6a1e9c",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "pw",
+      "type": "rectangle",
+      "x": 640,
+      "y": 80,
+      "width": 120,
+      "height": 45,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tpw",
+      "type": "text",
+      "x": 648,
+      "y": 95,
+      "width": 104,
+      "height": 20,
+      "text": "Push Worker",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "ew",
+      "type": "rectangle",
+      "x": 640,
+      "y": 155,
+      "width": 120,
+      "height": 45,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tew",
+      "type": "text",
+      "x": 648,
+      "y": 170,
+      "width": 104,
+      "height": 20,
+      "text": "Email Worker",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "sw",
+      "type": "rectangle",
+      "x": 640,
+      "y": 230,
+      "width": 120,
+      "height": 45,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tsw",
+      "type": "text",
+      "x": 648,
+      "y": 245,
+      "width": 104,
+      "height": 20,
+      "text": "SMS Worker",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "fcm",
+      "type": "rectangle",
+      "x": 780,
+      "y": 80,
+      "width": 100,
+      "height": 45,
+      "strokeColor": "#364fc7",
+      "backgroundColor": "#e5edff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tfcm",
+      "type": "text",
+      "x": 785,
+      "y": 95,
+      "width": 90,
+      "height": 20,
+      "text": "FCM/APNs",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#364fc7",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "ses",
+      "type": "rectangle",
+      "x": 780,
+      "y": 155,
+      "width": 100,
+      "height": 45,
+      "strokeColor": "#364fc7",
+      "backgroundColor": "#e5edff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tses",
+      "type": "text",
+      "x": 785,
+      "y": 170,
+      "width": 90,
+      "height": 20,
+      "text": "SendGrid/SES",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#364fc7",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "twilio",
+      "type": "rectangle",
+      "x": 780,
+      "y": 230,
+      "width": 100,
+      "height": 45,
+      "strokeColor": "#364fc7",
+      "backgroundColor": "#e5edff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "ttwilio",
+      "type": "text",
+      "x": 785,
+      "y": 245,
+      "width": 90,
+      "height": 20,
+      "text": "Twilio/SNS",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#364fc7",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "ae",
+      "type": "arrow",
+      "x": 150,
+      "y": 167,
+      "width": 60,
+      "height": 0,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "aq",
+      "type": "arrow",
+      "x": 370,
+      "y": 167,
+      "width": 60,
+      "height": 0,
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "apw",
+      "type": "arrow",
+      "x": 570,
+      "y": 162,
+      "width": 70,
+      "height": -55,
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70,
+          -55
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "aew",
+      "type": "arrow",
+      "x": 570,
+      "y": 170,
+      "width": 70,
+      "height": 0,
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "asw",
+      "type": "arrow",
+      "x": 570,
+      "y": 178,
+      "width": 70,
+      "height": 65,
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70,
+          65
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "af1",
+      "type": "arrow",
+      "x": 760,
+      "y": 102,
+      "width": 20,
+      "height": 0,
+      "strokeColor": "#364fc7",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "af2",
+      "type": "arrow",
+      "x": 760,
+      "y": 177,
+      "width": 20,
+      "height": 0,
+      "strokeColor": "#364fc7",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "af3",
+      "type": "arrow",
+      "x": 760,
+      "y": 252,
+      "width": 20,
+      "height": 0,
+      "strokeColor": "#364fc7",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "retry",
+      "type": "rectangle",
+      "x": 20,
+      "y": 310,
+      "width": 880,
+      "height": 80,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#fff5f5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tretry",
+      "type": "text",
+      "x": 30,
+      "y": 318,
+      "width": 870,
+      "height": 72,
+      "text": "Retry + DLQ: fail -> retry with exponential backoff (30s, 5m, 30m) -> DLQ after 5 failures\nPriority queues: HIGH (OTP, security alerts) | MEDIUM (social) | LOW (marketing digests)\nIdempotency: check notifId before sending -- avoid double-sending on retry",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#c92a2a",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}
