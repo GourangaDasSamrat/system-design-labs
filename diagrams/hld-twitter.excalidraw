@@ -1,0 +1,602 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 50,
+      "y": 15,
+      "width": 720,
+      "height": 35,
+      "text": "HLD: Twitter -- Hybrid Fan-out Timeline + Cassandra + Redis",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#212529",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "client",
+      "type": "rectangle",
+      "x": 20,
+      "y": 60,
+      "width": 100,
+      "height": 45,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tclient",
+      "type": "text",
+      "x": 28,
+      "y": 75,
+      "width": 84,
+      "height": 20,
+      "text": "Client",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "cdn",
+      "type": "rectangle",
+      "x": 20,
+      "y": 125,
+      "width": 100,
+      "height": 45,
+      "strokeColor": "#e67700",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tcdn",
+      "type": "text",
+      "x": 28,
+      "y": 140,
+      "width": 84,
+      "height": 20,
+      "text": "CDN\n(static)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#7c4a00",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "gw",
+      "type": "diamond",
+      "x": 175,
+      "y": 65,
+      "width": 150,
+      "height": 75,
+      "strokeColor": "#e67700",
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "tgw",
+      "type": "text",
+      "x": 183,
+      "y": 95,
+      "width": 134,
+      "height": 20,
+      "text": "API Gateway\n+ LB",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#7c4a00",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "tweet",
+      "type": "rectangle",
+      "x": 400,
+      "y": 45,
+      "width": 130,
+      "height": 55,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "ttweet",
+      "type": "text",
+      "x": 408,
+      "y": 60,
+      "width": 114,
+      "height": 35,
+      "text": "Tweet Service\n(create tweet)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1a7838",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "tl",
+      "type": "rectangle",
+      "x": 400,
+      "y": 130,
+      "width": 130,
+      "height": 55,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "ttl",
+      "type": "text",
+      "x": 408,
+      "y": 145,
+      "width": 114,
+      "height": 35,
+      "text": "Timeline Service\n(read timeline)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#1864ab",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "fanout",
+      "type": "rectangle",
+      "x": 400,
+      "y": 215,
+      "width": 130,
+      "height": 55,
+      "strokeColor": "#9c36b5",
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tfanout",
+      "type": "text",
+      "x": 408,
+      "y": 230,
+      "width": 114,
+      "height": 35,
+      "text": "Fan-out Service\n(Kafka workers)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#6a1e9c",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "redis",
+      "type": "rectangle",
+      "x": 580,
+      "y": 80,
+      "width": 140,
+      "height": 55,
+      "strokeColor": "#c92a2a",
+      "backgroundColor": "#ffe3e3",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tredis",
+      "type": "text",
+      "x": 588,
+      "y": 95,
+      "width": 124,
+      "height": 35,
+      "text": "Redis ZSet\ntimeline cache\n800 IDs/user",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#c92a2a",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "cass",
+      "type": "rectangle",
+      "x": 580,
+      "y": 175,
+      "width": 140,
+      "height": 55,
+      "strokeColor": "#364fc7",
+      "backgroundColor": "#e5edff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "tcass",
+      "type": "text",
+      "x": 588,
+      "y": 190,
+      "width": 124,
+      "height": 35,
+      "text": "Cassandra\ntweets table\n(write-heavy)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#364fc7",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "s3",
+      "type": "rectangle",
+      "x": 580,
+      "y": 265,
+      "width": 140,
+      "height": 45,
+      "strokeColor": "#888",
+      "backgroundColor": "#f1f3f5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "ts3",
+      "type": "text",
+      "x": 588,
+      "y": 278,
+      "width": 124,
+      "height": 20,
+      "text": "S3 + CloudFront\n(media)",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "strokeColor": "#555",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    },
+    {
+      "id": "ac1",
+      "type": "arrow",
+      "x": 120,
+      "y": 82,
+      "width": 55,
+      "height": 0,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          55,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "ac2",
+      "type": "arrow",
+      "x": 120,
+      "y": 147,
+      "width": 55,
+      "height": -42,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          55,
+          -42
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "as1",
+      "type": "arrow",
+      "x": 325,
+      "y": 97,
+      "width": 75,
+      "height": -25,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          75,
+          -25
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "as2",
+      "type": "arrow",
+      "x": 325,
+      "y": 107,
+      "width": 75,
+      "height": 45,
+      "strokeColor": "#555",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          75,
+          45
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "af",
+      "type": "arrow",
+      "x": 530,
+      "y": 235,
+      "width": 50,
+      "height": 0,
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "ar",
+      "type": "arrow",
+      "x": 530,
+      "y": 155,
+      "width": 50,
+      "height": 32,
+      "strokeColor": "#1971c2",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          32
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "adb",
+      "type": "arrow",
+      "x": 530,
+      "y": 80,
+      "width": 50,
+      "height": 20,
+      "strokeColor": "#c92a2a",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          20
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "acass",
+      "type": "arrow",
+      "x": 530,
+      "y": 215,
+      "width": 50,
+      "height": -15,
+      "strokeColor": "#364fc7",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          -15
+        ]
+      ],
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "hybrid",
+      "type": "rectangle",
+      "x": 20,
+      "y": 350,
+      "width": 770,
+      "height": 110,
+      "strokeColor": "#e67700",
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "thyb",
+      "type": "text",
+      "x": 30,
+      "y": 358,
+      "width": 750,
+      "height": 100,
+      "text": "Hybrid Timeline (Twitter's approach):\nRegular users (< 1M followers): Fan-out on WRITE -- push tweet ID to each follower's Redis ZSet on post\nCelebrity users (> threshold): Fan-out on READ -- DON'T fan-out (100M writes impossible!)\nTimeline read: fetch pre-computed ZSet + merge celebrity recent tweets + sort + return top 20",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "strokeColor": "#7c4a00",
+      "verticalAlign": "middle",
+      "groupIds": [],
+      "roundness": null,
+      "opacity": 100
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}
