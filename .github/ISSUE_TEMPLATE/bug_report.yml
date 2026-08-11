@@ -1,0 +1,75 @@
+name: Bug Report
+description: Report a bug or error in content, links, or diagrams
+title: "[BUG] "
+labels:
+  - bug
+  - triage
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear and concise description of the bug.
+      placeholder: Describe what is wrong.
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Which file(s) or section(s) are affected?
+      placeholder: e.g. 04-networking-and-routing/load-balancers.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior/content
+      description: What should be correct?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior/content
+      description: What is currently wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can this bug be reproduced and verified?
+      placeholder: |
+        1. Go to ...
+        2. Open ...
+        3. See the issue
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/Examples
+      description: Add screenshots or examples if applicable.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other relevant information.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Choose the severity level.
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true

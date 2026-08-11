@@ -1,0 +1,75 @@
+name: Pull Request Template
+description: Standard pull request checklist for content and diagram changes
+title: "[PR] "
+body:
+  - type: checkboxes
+    id: type-of-change
+    attributes:
+      label: Type of Change
+      options:
+        - label: New content (new markdown file or section)
+        - label: Content update (improvements to existing content)
+        - label: Diagram addition (new excalidraw diagram)
+        - label: Diagram update (improvements to existing diagram)
+        - label: Bug fix (correcting errors or broken links)
+        - label: Documentation improvement
+        - label: Configuration/workflow changes
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear and concise description of changes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes-made
+    attributes:
+      label: Changes Made
+      description: List specific changes.
+      placeholder: |
+        -
+        -
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: related-files
+    attributes:
+      label: Related Files
+      description: Files added or modified.
+      placeholder: |
+        -
+        -
+
+  - type: checkboxes
+    id: validation-checklist
+    attributes:
+      label: Validation Checklist
+      options:
+        - label: Markdown passes linting (run `markdownlint "**/*.md" -c .markdownlintrc.json`)
+        - label: All internal links are valid
+        - label: Code examples are correct and tested
+        - label: Diagrams (if added) have valid JSON structure
+        - label: No spelling errors (domain terms whitelisted in `.cspell.json`)
+        - label: Formatting is consistent with existing content
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Reference related issues, e.g. Closes #123.
+
+  - type: textarea
+    id: screenshots-diagrams
+    attributes:
+      label: Screenshots/Diagrams
+      description: If visual changes were made, add screenshots or descriptions.
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any other context or considerations.

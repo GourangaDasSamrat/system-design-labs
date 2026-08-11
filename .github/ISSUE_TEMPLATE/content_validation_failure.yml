@@ -1,0 +1,46 @@
+name: Content Validation Failure
+description: Automated content validation workflow failure (auto-generated)
+title: "Content Validation Issues"
+labels:
+  - content-validation
+  - automation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Validation Summary
+        This issue is typically auto-populated by workflow automation.
+
+  - type: textarea
+    id: validation-summary
+    attributes:
+      label: Validation summary
+      description: Fill or paste a summary of validation results.
+      value: |
+        | Check | Status |
+        |-------|--------|
+        | Markdown Linting | - |
+        | Spell-Check | - |
+        | Link Validation | - |
+        | Diagram Validation | - |
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Specific failures and errors.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## How to Fix
+        1. Review the validation errors above
+        2. Make necessary corrections to the content
+        3. Commit and push changes
+        4. Workflow will automatically close this issue when all validations pass
+
+  - type: input
+    id: related-workflow-run
+    attributes:
+      label: Related workflow run
+      description: Add the GitHub Actions run URL.
