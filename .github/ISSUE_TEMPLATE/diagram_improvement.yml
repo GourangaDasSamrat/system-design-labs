@@ -1,0 +1,50 @@
+name: Diagram Improvement
+description: Suggest improvements, fixes, or new diagrams
+title: "[DIAGRAM] "
+labels:
+  - diagram
+  - improvement
+body:
+  - type: input
+    id: current-diagram-topic
+    attributes:
+      label: Current diagram/topic
+      description: Which diagram or concept needs a diagram?
+      placeholder: e.g. diagrams/load-balancers.excalidraw
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue description
+      description: What's missing, unclear, or could be improved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-improvements
+    attributes:
+      label: Suggested improvements
+      description: How should the diagram be updated or created?
+      placeholder: |
+        -
+        -
+
+  - type: textarea
+    id: visual-requirements
+    attributes:
+      label: Visual requirements
+      description: Colors, layout, and specific elements needed.
+
+  - type: textarea
+    id: related-content
+    attributes:
+      label: Related content
+      description: Links to related markdown files or topics.
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Any external diagrams or examples to reference.

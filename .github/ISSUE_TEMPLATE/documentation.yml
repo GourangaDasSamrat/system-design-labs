@@ -1,0 +1,49 @@
+name: Documentation Improvement
+description: Improve existing documentation, clarity, or examples
+title: "[DOCS] "
+labels:
+  - documentation
+  - improvement
+body:
+  - type: input
+    id: current-file
+    attributes:
+      label: Current file
+      description: What is the current documentation file?
+      placeholder: e.g. 10-interview-prep/framework.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What's unclear, incomplete, or confusing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-improvement
+    attributes:
+      label: Proposed improvement
+      description: How should the documentation be improved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: Code examples, diagrams, or references that would help.
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Which topics/sections would benefit from this improvement?
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: References, related issues, or links.

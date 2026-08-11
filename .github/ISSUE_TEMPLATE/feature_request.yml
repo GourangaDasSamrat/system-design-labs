@@ -1,0 +1,59 @@
+name: Feature Request
+description: Suggest a new topic, diagram, or content section
+title: "[FEATURE] "
+labels:
+  - enhancement
+  - content
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: Clear description of the requested feature/content.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why would this be valuable for the repository?
+      placeholder: |
+        -
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-content
+    attributes:
+      label: Proposed content/topic
+      description: What should be included or covered?
+      placeholder: |
+        -
+        -
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: related-topics
+    attributes:
+      label: Related topics
+      description: Any existing content this relates to?
+      placeholder: "-"
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Links, references, or other relevant info.
+
+  - type: dropdown
+    id: effort-estimate
+    attributes:
+      label: Effort estimate
+      options:
+        - Quick
+        - Medium
+        - Complex
