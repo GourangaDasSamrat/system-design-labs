@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use or reference these system design notes, please cite them as below."
+authors:
+  - family-names: "Samrat"
+    given-names: "Gouranga Das"
+title: "system-design-labs: A Structured System Design Knowledge Base"
+date-released: 2026-01-01
+url: "https://github.com/GourangaDasSamrat/system-design-labs"
+license: CC-BY-NC-SA-4.0
